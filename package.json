@@ -1,0 +1,41 @@
+{
+  "build": {
+    "directories": {
+      "output": "build"
+    },
+    "appId": "com.adsmanager.app",
+    "asar": false,
+    "nsis": {
+      "installerIcon": "./build/icons8-facebook-500.ico",
+      "uninstallerIcon":  "./build/icons8-facebook-500.ico",
+      "uninstallDisplayName": "Uninstall Ads Manager"
+    },
+    "win": {
+      "icon":  "./icons8-facebook-500.ico",
+      "target": "nsis"
+    }
+  },
+  "name": "adsmanager",
+  "productName": "Native Dashboard",
+  "version": "1.5.5",
+  "description": "Facebook Ads Manager version 1.5.5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Opensource Love Team",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.3",
+    "electron-packager": "^16.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "electron-windows-store": "^2.1.0",
+    "node-sass": "^7.0.1",
+    "yarn": "^1.22.19"
+  }
+}
